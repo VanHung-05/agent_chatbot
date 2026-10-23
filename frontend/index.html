@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trợ Lý Kỹ Thuật Máy Giặt Samsung AI</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Markdown parser: Marked.js -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="2" width="18" height="20" rx="2"/>
+            <circle cx="12" cy="13" r="5"/>
+            <path d="M12 18a5 5 0 0 0 5-5"/>
+            <line x1="7" y1="6" x2="7.01" y2="6"/>
+            <line x1="11" y1="6" x2="13" y2="6"/>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <h2>Samsung AI Agent</h2>
+          <span class="badge">Model WA12 / WA14</span>
+        </div>
+      </div>
+
+      <!-- Action: Cuộc hội thoại mới -->
+      <button class="new-chat-btn" onclick="createNewSession()">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="12" y1="5" x2="12" y2="19"/>
+          <line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+        Đoạn chat mới
+      </button>
+
+      <!-- Danh sách lịch sử các phiên chat -->
+      <div class="sidebar-section history-section">
+        <div class="section-header">
+          <h3>💬 LỊCH SỬ HỘI THOẠI</h3>
+          <span id="session-count" class="count-pill">0</span>
+        </div>
+        <div id="session-list" class="session-list">
+          <!-- Render danh sách phiên chat động -->
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>⚡ CÔNG CỤ TỰ ĐỘNG (TOOLS)</h3>
+        <ul class="tool-list">
+          <li>
+            <span class="tool-dot active"></span>
+            <strong>lookup_error_code</strong>
+            <small>Tra cứu tức thời mã 4C, 1C, 5C, Ub...</small>
+          </li>
+          <li>
+            <span class="tool-dot active"></span>
+            <strong>get_specifications</strong>
+            <small>Tra bảng thông số kỹ thuật trang 50</small>
+          </li>
+          <li>
+            <span class="tool-dot active"></span>
+            <strong>search_manual_rag</strong>
+            <small>Tìm kiếm Neural 2-Stage trong 52 trang</small>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>💡 GỢI Ý CÂU HỎI NHANH</h3>
+        <div class="quick-tags">
+          <button class="tag-btn" onclick="sendQuickPrompt('Máy giặt hiện mã lỗi 4C là bị làm sao?')">🚨 Mã lỗi 4C là gì?</button>
+          <button class="tag-btn" onclick="sendQuickPrompt('Lỗi Ub lúc đang vắt thì xử lý thế nào?')">⚖️ Lỗi vắt Ub</button>
+          <button class="tag-btn" onclick="sendQuickPrompt('Cách chạy chương trình VỆ SINH LỒNG GIẶT?')">🧼 Vệ sinh lồng giặt</button>
+          <button class="tag-btn" onclick="sendQuickPrompt('Thông số kích thước và khối lượng của model WA14CG?')">📐 Thông số WA14CG</button>
+          <button class="tag-btn" onclick="sendQuickPrompt('Những loại quần áo nào tuyệt đối không được giặt?')">🚫 Đồ giặt cấm</button>
+          <button class="tag-btn" onclick="sendQuickPrompt('Cách nối ống thoát nước đứng cách sàn bao nhiêu?')">🚰 Lắp ống thoát nước</button>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <button id="clear-btn" class="clear-chat-btn" onclick="clearCurrentSession()">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="3 6 5 6 21 6"/>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+          </svg>
+          Xoá đoạn chat hiện tại
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Chat Container -->
+    <main class="chat-container">
+      <header class="chat-header">
+        <div class="header-status">
+          <span class="status-indicator"></span>
+          <div>
+            <h1>Trợ Lý Kỹ Thuật Máy Giặt Samsung</h1>
+            <p>Hệ thống Agentic RAG Local: Qwen2.5-7B • BGE-M3 • PyTorch</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <label for="model-select" class="model-select-label">Mô hình Embedding:</label>
+          <select id="model-select" class="model-dropdown" onchange="handleModelChange(this.value)">
+            <option value="finetuned" selected>🔥 Finetuned (Đã huấn luyện MNRL)</option>
+            <option value="bge-m3">🌐 BAAI/bge-m3 (Pretrained 1024D)</option>
+            <option value="vietnamese-bi-encoder">🇻🇳 BKAI-Bi-Encoder (Model gốc)</option>
+          </select>
+        </div>
+      </header>
+
+      <!-- Message Area -->
+      <div id="messages-box" class="messages-box">
+        <div class="message-row bot-row">
+          <div class="avatar bot-avatar">🤖</div>
+          <div class="message-bubble bot-bubble">
+            <p>Xin chào! Tôi là <strong>AI Agent chuyên trách hướng dẫn sử dụng máy giặt Samsung WA12CG5886 / WA14CG5886</strong>.</p>
+            <p>Tôi có thể hỗ trợ bạn:</p>
+            <ul>
+              <li>Tra cứu tức thì các <strong>mã lỗi</strong> (4C, 1C, 5C, Ub, dC...) và các bước xử lý chuẩn xác.</li>
+              <li>Hướng dẫn <strong>lắp đặt</strong> nguồn nước, ống xả, cân bằng máy.</li>
+              <li>Quy trình <strong>vệ sinh lồng giặt</strong>, bộ lọc xơ vải Magic, chất tẩy rửa an toàn.</li>
+              <li>Tra cứu <strong>thông số kỹ thuật</strong> chi tiết của từng model.</li>
+            </ul>
+            <p><em>Hãy đặt câu hỏi bên dưới hoặc chọn gợi ý nhanh bên trái để bắt đầu!</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Tool Status Bar -->
+      <div id="tool-status-bar" class="tool-status-bar hidden">
+        <div class="spinner"></div>
+        <span id="tool-status-text">Đang phân tích câu hỏi...</span>
+      </div>
+
+      <!-- Input Box -->
+      <footer class="chat-input-area">
+        <form id="chat-form" onsubmit="handleFormSubmit(event)">
+          <div class="input-wrapper">
+            <textarea
+              id="user-input"
+              rows="1"
+              placeholder="Nhập câu hỏi về máy giặt Samsung (VD: Máy báo lỗi 4C, cách vệ sinh lồng giặt...)"
+              onkeydown="handleKeyDown(event)"
+            ></textarea>
+            <button type="submit" id="send-btn" class="send-button" title="Gửi câu hỏi">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </footer>
+    </main>
+  </div>
+
+  <script src="/static/app.js?v=3"></script>
+</body>
+</html>

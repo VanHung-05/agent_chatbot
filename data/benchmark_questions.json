@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "category": "Mã lỗi",
+    "query": "Máy giặt báo mã lỗi 4C là lỗi gì và cách sửa thế nào?",
+    "target_page": 47,
+    "keywords": ["4C", "không có nước cấp", "vòi nước"]
+  },
+  {
+    "id": 2,
+    "category": "Mã lỗi",
+    "query": "Mã 1C trên màn hình máy giặt có ý nghĩa gì?",
+    "target_page": 47,
+    "keywords": ["1C", "cảm biến mức nước", "thoát nước 3 phút"]
+  },
+  {
+    "id": 3,
+    "category": "Mã lỗi",
+    "query": "Tại sao máy giặt hiện lỗi Ub khi đang vắt?",
+    "target_page": 49,
+    "keywords": ["Ub", "chức năng vắt", "mất cân bằng", "quần áo không đều"]
+  },
+  {
+    "id": 4,
+    "category": "Mã lỗi",
+    "query": "Lỗi 5C trên máy giặt Samsung xử lý thế nào?",
+    "target_page": 47,
+    "keywords": ["5C", "nước không thoát", "ống thoát nước tắc"]
+  },
+  {
+    "id": 5,
+    "category": "Mã lỗi",
+    "query": "Mã dC hoặc dC1 xuất hiện là do đâu?",
+    "target_page": 48,
+    "keywords": ["dC", "dC1", "nắp máy giặt", "đóng chưa đúng"]
+  },
+  {
+    "id": 6,
+    "category": "Mã lỗi",
+    "query": "Lỗi 9C1 và 9C2 là gì?",
+    "target_page": 48,
+    "keywords": ["9C1", "9C2", "vượt điện áp", "điện áp thấp", "PCB"]
+  },
+  {
+    "id": 7,
+    "category": "Mã lỗi",
+    "query": "Lỗi 8C cảm biến MEMS cần khắc phục thế nào?",
+    "target_page": 47,
+    "keywords": ["8C", "cảm biến MEMS", "tắt nguồn đợi 2-3 phút"]
+  },
+  {
+    "id": 8,
+    "category": "Mã lỗi",
+    "query": "Khi máy giặt báo mã OC thì phải làm gì?",
+    "target_page": 48,
+    "keywords": ["OC", "nước tràn", "khởi động lại"]
+  },
+  {
+    "id": 9,
+    "category": "Mã lỗi",
+    "query": "Mã lỗi LC liên quan đến bộ phận nào?",
+    "target_page": 48,
+    "keywords": ["LC", "ống xả nước", "đầu vòi xả đặt trên sàn"]
+  },
+  {
+    "id": 10,
+    "category": "Mã lỗi",
+    "query": "Mã AC6 và 3C có phải lỗi động cơ không?",
+    "target_page": [47, 48],
+    "keywords": ["AC6", "3C", "kết nối biến tần", "động cơ"]
+  },
+  {
+    "id": 11,
+    "category": "Lắp đặt",
+    "query": "Khoảng cách an toàn tối thiểu giữa máy giặt và tường là bao nhiêu?",
+    "target_page": 11,
+    "keywords": ["10 cm", "bức tường", "khoảng cách"]
+  },
+  {
+    "id": 12,
+    "category": "Lắp đặt",
+    "query": "Cách nối ống nước với vòi nước có ren?",
+    "target_page": 14,
+    "keywords": ["vòi nước có ren", "xoay theo chiều kim đồng hồ", "van đầu vào"]
+  },
+  {
+    "id": 13,
+    "category": "Lắp đặt",
+    "query": "Lắp ống thoát nước dạng đứng cần cao bao nhiêu cm so với sàn?",
+    "target_page": 18,
+    "keywords": ["90-100 cm", "ống đứng", "ống thoát nước"]
+  },
+  {
+    "id": 14,
+    "category": "Lắp đặt",
+    "query": "Chiều dài tối đa của ống thoát nước nối dài là bao nhiêu?",
+    "target_page": 18,
+    "keywords": ["3 m", "không vượt quá 3m", "bậu cửa cao 5 cm"]
+  },
+  {
+    "id": 15,
+    "category": "Lắp đặt",
+    "query": "Làm thế nào để chạy chế độ điều chỉnh nhận biết khối lượng sau khi lắp đặt?",
+    "target_page": 19,
+    "keywords": ["Chế độ Điều chỉnh", "Mức Nước", "Hẹn Giờ Kết Thúc", "3 giây"]
+  },
+  {
+    "id": 16,
+    "category": "Lắp đặt",
+    "query": "Có được dùng dây điện nối dài cho máy giặt không?",
+    "target_page": 11,
+    "keywords": ["mạch điện riêng", "không được sử dụng dây điện nối dài"]
+  },
+  {
+    "id": 17,
+    "category": "Lắp đặt",
+    "query": "Cách nối vòi nước không có ren với bộ chuyển đổi?",
+    "target_page": 15,
+    "keywords": ["không ren", "bộ chuyển đổi", "tua vít Phillips", "siết ốc"]
+  },
+  {
+    "id": 18,
+    "category": "Lắp đặt",
+    "query": "Nối ống nước nóng ở phía sau máy giặt như thế nào?",
+    "target_page": 16,
+    "keywords": ["ống nước nóng", "đầu đỏ", "vòi nước nóng"]
+  },
+  {
+    "id": 19,
+    "category": "Đồ giặt & Chất tẩy",
+    "query": "Những loại quần áo hoặc vật dụng nào tuyệt đối không được giặt bằng máy này?",
+    "target_page": 23,
+    "keywords": ["cà vạt", "áo ngực", "bộ com lê", "không thấm nước", "áo khoác"]
+  },
+  {
+    "id": 20,
+    "category": "Đồ giặt & Chất tẩy",
+    "query": "Ngăn chứa thuốc tẩy nằm ở vị trí nào và dùng loại thuốc tẩy gì?",
+    "target_page": 20,
+    "keywords": ["ngăn chứa thuốc tẩy", "bên trái lồng giặt", "thuốc tẩy không clo"]
+  },
+  {
+    "id": 21,
+    "category": "Đồ giặt & Chất tẩy",
+    "query": "Bubble Kit dùng để làm gì và có tháo ra được không?",
+    "target_page": 20,
+    "keywords": ["Bubble Kit", "chất giặt tẩy", "tháo Bubble Kit", "bột giặt"]
+  },
+  {
+    "id": 22,
+    "category": "Đồ giặt & Chất tẩy",
+    "query": "Có được đổ trực tiếp thuốc tẩy có clo vào lồng giặt với đồ giặt không?",
+    "target_page": 21,
+    "keywords": ["không đổ trực tiếp thuốc tẩy có clo", "hư hại vải"]
+  },
+  {
+    "id": 23,
+    "category": "Đồ giặt & Chất tẩy",
+    "query": "Cách gấp chăn mền trước khi cho vào máy giặt?",
+    "target_page": 25,
+    "keywords": ["gấp mền", "khu vực nhựa A", "lồng giặt", "mỗi lần một món"]
+  },
+  {
+    "id": 24,
+    "category": "Đồ giặt & Chất tẩy",
+    "query": "Tại sao phải cho áo ngực hoặc tất ni lông vào túi lưới khi giặt?",
+    "target_page": 25,
+    "keywords": ["túi lưới", "áo ngực", "bộ phận kim loại", "rách đồ giặt"]
+  },
+  {
+    "id": 25,
+    "category": "Đồ giặt & Chất tẩy",
+    "query": "Trước khi giặt cần kiểm tra và lấy những vật gì ra khỏi túi quần áo?",
+    "target_page": 24,
+    "keywords": ["đồng tiền", "ghim", "khóa kéo", "làm hỏng lồng giặt"]
+  },
+  {
+    "id": 26,
+    "category": "Bảo trì & Vệ sinh",
+    "query": "Bao lâu thì nên chạy chương trình VỆ SINH LỒNG GIẶT một lần?",
+    "target_page": 36,
+    "keywords": ["1-2 tháng", "VỆ SINH LỒNG GIẶT", "đèn báo sáng"]
+  },
+  {
+    "id": 27,
+    "category": "Bảo trì & Vệ sinh",
+    "query": "Khi chạy chương trình Vệ Sinh Lồng Giặt Cường Độ Cao cần cho bao nhiêu ml thuốc tẩy?",
+    "target_page": 37,
+    "keywords": ["200 ml", "thuốc tẩy clo", "đáy lồng giặt", "Giặt Kỹ Siêu Tốc 3 giây"]
+  },
+  {
+    "id": 28,
+    "category": "Bảo trì & Vệ sinh",
+    "query": "Cách tháo và làm sạch bộ lọc Magic như thế nào?",
+    "target_page": 38,
+    "keywords": ["Bộ lọc Magic", "ấn vùng phía trên", "bàn chải", "tiếng tách"]
+  },
+  {
+    "id": 29,
+    "category": "Bảo trì & Vệ sinh",
+    "query": "Vệ sinh bộ lọc lưới cấp nước bằng dụng cụ gì?",
+    "target_page": 40,
+    "keywords": ["kìm", "bộ lọc lưới", "bàn chải mềm", "cửa đưa nước"]
+  },
+  {
+    "id": 30,
+    "category": "Bảo trì & Vệ sinh",
+    "query": "Nếu máy giặt có mùi hôi thì xử lý ra sao?",
+    "target_page": 46,
+    "keywords": ["mùi hôi", "vệ sinh định kỳ", "lau khô nội thất", "quá nhiều bọt"]
+  },
+  {
+    "id": 31,
+    "category": "Thông số kỹ thuật",
+    "query": "Khối lượng giặt tối đa của model WA14CG5886 là bao nhiêu kg?",
+    "target_page": 50,
+    "keywords": ["14,0 kg", "WA14CG5886", "khối lượng giặt tối đa"]
+  },
+  {
+    "id": 32,
+    "category": "Thông số kỹ thuật",
+    "query": "Trọng lượng tịnh của máy giặt model WA12CG5886 là bao nhiêu?",
+    "target_page": 50,
+    "keywords": ["40,0 kg", "WA12CG5886", "trọng lượng tịnh"]
+  },
+  {
+    "id": 33,
+    "category": "Thông số kỹ thuật",
+    "query": "Tốc độ vắt tối đa của máy giặt Samsung này là bao nhiêu vòng/phút?",
+    "target_page": 50,
+    "keywords": ["700 vòng/phút", "tốc độ vắt"]
+  },
+  {
+    "id": 34,
+    "category": "Thông số kỹ thuật",
+    "query": "Công suất tiêu thụ điện của máy giặt là bao nhiêu W?",
+    "target_page": 50,
+    "keywords": ["1400-1650 W", "AC 220-240 V", "50 Hz"]
+  },
+  {
+    "id": 35,
+    "category": "Thông số kỹ thuật",
+    "query": "Kích thước của model máy giặt WA14CG5886 là bao nhiêu mm?",
+    "target_page": 50,
+    "keywords": ["R610 x S675 x C1089", "kích thước mm"]
+  },
+  {
+    "id": 36,
+    "category": "Tính năng & Ứng dụng",
+    "query": "Cách kích hoạt chế độ Kiểm Tra Thông Minh (Smart Check)?",
+    "target_page": 22,
+    "keywords": ["Kiểm Tra Thông Minh", "Giặt và Xả trong 3 giây", "Samsung Smart Washer"]
+  },
+  {
+    "id": 37,
+    "category": "Tính năng & Ứng dụng",
+    "query": "Băng tần và công suất phát Wi-Fi của máy giặt là bao nhiêu?",
+    "target_page": 35,
+    "keywords": ["20 dBm", "2,412 GHz – 2,472 GHz", "Wi-Fi"]
+  },
+  {
+    "id": 38,
+    "category": "An toàn",
+    "query": "Nhiệt độ nước nóng cấp vào máy giặt không được vượt quá bao nhiêu độ C?",
+    "target_page": 9,
+    "keywords": ["50°C", "nước nóng", "biến dạng bộ phận nhựa"]
+  },
+  {
+    "id": 39,
+    "category": "An toàn",
+    "query": "Nếu thiết bị bị ngập nước hoặc rò rỉ điện cần làm gì đầu tiên?",
+    "target_page": 8,
+    "keywords": ["ngắt nguồn điện", "tắt nguồn cấp nước", "không chạm tay ướt"]
+  },
+  {
+    "id": 40,
+    "category": "An toàn",
+    "query": "Số điện thoại tổng đài miễn phí hỗ trợ chăm sóc khách hàng của Samsung tại Việt Nam là gì?",
+    "target_page": 52,
+    "keywords": ["1800 588 889", "(028)73056888", "tổng đài miễn phí"]
+  }
+]

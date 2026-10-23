@@ -1,0 +1,121 @@
+[
+  {
+    "code": "1C",
+    "issue": "Cảm biến Mức Nước không hoạt động bình thường.",
+    "action": "Kiểm tra bộ dây của Cảm biến Mức Nước. Nếu mã thông tin vẫn còn, hãy liên hệ với trung tâm dịch vụ chăm sóc khách hàng.",
+    "note": "Khi máy giặt hiển thị '1C', máy giặt sẽ thoát nước trong 3 phút và nút Nguồn sẽ không hoạt động trong khoảng thời gian này.",
+    "page": 47
+  },
+  {
+    "code": "3C",
+    "issue": "Kiểm tra động cơ xem có hoạt động không.",
+    "action": "Thử khởi động lại chương trình. Nếu vấn đề vẫn tiếp tục, hãy gọi cho dịch vụ.",
+    "note": "",
+    "page": 47
+  },
+  {
+    "code": "4C",
+    "issue": "Không có nước cấp vào.",
+    "action": "Hãy chắc chắn rằng các vòi nước đang mở. Hãy chắc chắn rằng các ống nước không bị tắc. Hãy chắc chắn rằng các vòi nước không bị đóng băng. Hãy chắc chắn rằng máy giặt đang hoạt động với áp lực nước đủ. Hãy chắc chắn rằng các vòi nước lạnh và vòi nước nóng được kết nối đúng. Làm sạch bộ lọc lưới vì nó có thể bị tắc.",
+    "note": "Khi máy giặt hiển thị '4C', máy giặt sẽ thoát nước trong 3 phút và nút Nguồn sẽ không hoạt động trong khoảng thời gian này.",
+    "page": 47
+  },
+  {
+    "code": "4C2",
+    "issue": "Nối nhầm ống cấp nước nóng/lạnh.",
+    "action": "Hãy chắc chắn rằng các ống cấp nước lạnh được gắn cố định vào vòi nước lạnh. Nếu ống nước được kết nối với vòi nước nóng, đồ giặt có thể bị biến dạng trong một số chương trình.",
+    "note": "",
+    "page": 47
+  },
+  {
+    "code": "5C",
+    "issue": "Nước không thoát ra ngoài.",
+    "action": "Hãy chắc chắn rằng các ống thoát nước không bị đóng băng hoặc bị tắc. Hãy chắc chắn rằng các ống thoát nước được đặt đúng vị trí, tùy thuộc vào kiểu kết nối. Làm sạch bộ lọc các mảnh vỡ vì nó có thể bị tắc. Hãy chắc chắn rằng ống xả đã được nắn thẳng trên toàn bộ đoạn đường đến hệ thống thoát nước. Nếu mã thông tin vẫn còn, hãy liên hệ với trung tâm dịch vụ chăm sóc khách hàng.",
+    "note": "",
+    "page": 47
+  },
+  {
+    "code": "8C",
+    "issue": "Kiểm tra cảm biến MEMS.",
+    "action": "Tắt nguồn máy giặt. Đợi 2-3 phút, bật máy giặt rồi thử lại lần nữa. Nếu vấn đề vẫn tiếp tục, hãy gọi cho dịch vụ.",
+    "note": "",
+    "page": 47
+  },
+  {
+    "code": "9C1",
+    "issue": "Bảng điều khiển điện tử cần được kiểm tra (Lỗi Vượt Điện áp).",
+    "action": "Kiểm tra PCB và bộ dây. Kiểm tra xem điện có được cung cấp đúng cách không. Nếu mã thông tin vẫn còn, hãy liên hệ với trung tâm dịch vụ chăm sóc khách hàng.",
+    "note": "",
+    "page": 48
+  },
+  {
+    "code": "9C2",
+    "issue": "Phát hiện điện áp thấp.",
+    "action": "Kiểm tra xem dây nguồn được cắm vào chưa. Nếu mã thông tin vẫn còn, hãy liên hệ với trung tâm dịch vụ chăm sóc khách hàng.",
+    "note": "",
+    "page": 48
+  },
+  {
+    "code": "AC6",
+    "issue": "Vấn đề về Kết nối Biến tầng.",
+    "action": "Kiểm tra PCB biến tần và bộ dây. Nếu mã thông tin vẫn còn, hãy liên hệ với trung tâm dịch vụ chăm sóc khách hàng.",
+    "note": "",
+    "page": 48
+  },
+  {
+    "code": "dC",
+    "issue": "Nắp máy giặt không được đóng đúng cách.",
+    "action": "Hãy chắc chắn rằng nắp máy đã được đóng lại đúng cách. Hãy chắc chắn rằng đồ giặt không bị kẹt ở nắp máy. Nếu mã thông tin vẫn còn, hãy liên hệ với trung tâm dịch vụ chăm sóc khách hàng.",
+    "note": "Áp dụng cả mã dC và dC1",
+    "page": 48
+  },
+  {
+    "code": "dC1",
+    "issue": "Nắp máy giặt không được đóng đúng cách.",
+    "action": "Hãy chắc chắn rằng nắp máy đã được đóng lại đúng cách. Hãy chắc chắn rằng đồ giặt không bị kẹt ở nắp máy. Nếu mã thông tin vẫn còn, hãy liên hệ với trung tâm dịch vụ chăm sóc khách hàng.",
+    "note": "",
+    "page": 48
+  },
+  {
+    "code": "HC",
+    "issue": "Kiểm tra hệ thống cung cấp nhiệt độ cao.",
+    "action": "Nếu mã thông tin vẫn còn, hãy liên hệ với trung tâm dịch vụ chăm sóc khách hàng.",
+    "note": "",
+    "page": 48
+  },
+  {
+    "code": "LC",
+    "issue": "Kiểm tra ống xả nước.",
+    "action": "Đảm bảo rằng đầu vòi xả đã được đặt trên sàn. Đảm bảo rằng ống thoát nước không bị tắc. Nếu mã thông tin vẫn còn, hãy liên hệ với trung tâm dịch vụ chăm sóc khách hàng.",
+    "note": "Khi máy giặt hiển thị 'LC', máy giặt sẽ thoát nước trong 3 phút và nút Nguồn sẽ không hoạt động trong khoảng thời gian này.",
+    "page": 48
+  },
+  {
+    "code": "OC",
+    "issue": "Nước tràn.",
+    "action": "Khởi động lại sau khi vắt. Nếu mã thông tin vẫn còn trên màn hình, hãy liên hệ với trung tâm dịch vụ của Samsung tại địa phương.",
+    "note": "",
+    "page": 48
+  },
+  {
+    "code": "PC",
+    "issue": "Không thể phát hiện vị trí của bộ ly hợp.",
+    "action": "Nếu mã thông tin vẫn còn, hãy liên hệ với trung tâm dịch vụ chăm sóc khách hàng.",
+    "note": "",
+    "page": 48
+  },
+  {
+    "code": "PC1",
+    "issue": "Sau khi phát hiện vị trí của bộ ly hợp, tín hiệu của bộ ly hợp sai.",
+    "action": "Nếu mã thông tin vẫn còn, hãy liên hệ với trung tâm dịch vụ chăm sóc khách hàng.",
+    "note": "",
+    "page": 48
+  },
+  {
+    "code": "Ub",
+    "issue": "Chức năng vắt không hoạt động (lồng giặt mất cân bằng).",
+    "action": "Hãy chắc chắn rằng đồ giặt đã được trải đều. Hãy chắc chắn rằng máy giặt được đặt trên bề mặt bằng phẳng, vững chắc. Phân phối lại tải trọng. Nếu chỉ giặt một món đồ duy nhất, như áo choàng tắm hoặc quần jean, lần vắt cuối cùng có thể không đạt yêu cầu và thông báo lỗi 'Ub' sẽ hiển thị trên màn hình.",
+    "note": "",
+    "page": 49
+  }
+]

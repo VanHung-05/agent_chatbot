@@ -1,0 +1,38 @@
+[
+  {
+    "model_name": "BAAI/bge-m3",
+    "device": "mps",
+    "num_questions": 40,
+    "mrr": 0.8303977272727272,
+    "recall@1": 0.725,
+    "recall@3": 0.95,
+    "recall@5": 0.95,
+    "recall@10": 0.975,
+    "recall@20": 1.0,
+    "query_latency_ms": 73.14934730529785
+  },
+  {
+    "model_name": "intfloat/multilingual-e5-base",
+    "device": "mps",
+    "num_questions": 40,
+    "mrr": 0.780141223155929,
+    "recall@1": 0.675,
+    "recall@3": 0.875,
+    "recall@5": 0.925,
+    "recall@10": 0.95,
+    "recall@20": 0.975,
+    "query_latency_ms": 27.700471878051758
+  },
+  {
+    "model_name": "bkai-foundation-models/vietnamese-bi-encoder",
+    "device": "mps",
+    "num_questions": 40,
+    "mrr": 0.6609126984126984,
+    "recall@1": 0.525,
+    "recall@3": 0.75,
+    "recall@5": 0.825,
+    "recall@10": 0.95,
+    "recall@20": 0.95,
+    "query_latency_ms": 22.748374938964844
+  }
+]

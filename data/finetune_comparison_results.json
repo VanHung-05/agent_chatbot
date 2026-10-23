@@ -1,0 +1,35 @@
+{
+  "bge_m3": {
+    "label": "BAAI/bge-m3 (Pretrained 1024D)",
+    "model": "BAAI/bge-m3",
+    "mrr": 0.8303977272727272,
+    "recall@1": 0.725,
+    "recall@3": 0.95,
+    "recall@5": 0.95,
+    "recall@10": 0.975,
+    "recall@20": 1.0,
+    "latency_ms": 23.989874124526978
+  },
+  "bkai_pretrained": {
+    "label": "GỐC (Pretrained)",
+    "model": "bkai-foundation-models/vietnamese-bi-encoder",
+    "mrr": 0.6609126984126984,
+    "recall@1": 0.525,
+    "recall@3": 0.75,
+    "recall@5": 0.825,
+    "recall@10": 0.95,
+    "recall@20": 0.95,
+    "latency_ms": 6.74707293510437
+  },
+  "bkai_finetuned": {
+    "label": "SAU FINE-TUNE (MNRL)",
+    "model": "/Users/macbook/Documents/HK1_Nam4(2627)/Practice/DeepLearning(TH)/agent_hdsd/models/finetuned-vietnamese-embedding",
+    "mrr": 0.7350160256410256,
+    "recall@1": 0.625,
+    "recall@3": 0.825,
+    "recall@5": 0.9,
+    "recall@10": 0.975,
+    "recall@20": 0.975,
+    "latency_ms": 6.799429655075073
+  }
+}
